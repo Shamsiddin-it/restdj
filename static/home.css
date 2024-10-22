@@ -1,0 +1,217 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+body {
+    background-color: #f8f8f8; /* Light background for contrast */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(38, 38, 38, 0.9); /* Slight transparency */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+nav:hover {
+    background-color: rgba(38, 38, 38, 1); /* Darkens on hover */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    background-color: rgb(22, 22, 94);
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home {
+    color: #fff;
+}
+
+.btn {
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    background-color: rgb(22, 22, 94);
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: rgb(94, 158, 61);
+}
+
+/* Menu Section */
+#menu {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    background: #fff; /* White background for contrast */
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth scale on hover */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price {
+    text-align: right;
+    font-weight: bold;
+    color: #cb202d; /* Highlight price */
+}
+
+.details button {
+    background-color: #cb202d;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details button:hover {
+    background-color: #f44336; /* Slightly brighter on hover */
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about_column img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 20px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.about_column img:hover {
+    transform: scale(1.1); /* Scale on hover */
+}
+
+/* Order Section */
+#order {
+    background: #fff;
+    padding: 50px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inp_box {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(22, 22, 94);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: rgb(94, 158, 61);
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #262626;
+    color: white;
+}
