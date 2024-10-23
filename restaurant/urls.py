@@ -5,4 +5,5 @@ urlpatterns = [
     path("",home,name = "home"),
     path("home/",home,name = "home"),
     path("reglog",reglog,name = "reglog"),
+    path("tables/", tables, name = "tables"),
 ]
